@@ -39,6 +39,7 @@ The concept is to take a DICOM file on your machine and upload it to the `/uploa
 - Additional VMs for scale and to avoid single points of failure
 - Authentication (basic or OAuth) for private files
 - Multiple file uploads, rather than one DICOM file at a time
+- Unit and E2E tests with CI
 
 ## Examples
 
