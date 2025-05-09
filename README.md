@@ -22,7 +22,7 @@ The concept is to take a DICOM file on your machine and upload it to the `/uploa
 
 - There are _two_ docker images you can run:
 
-1. [docker-go-server](./docker_image/docker-go-server/)
+1. [docker-go-server](./docker_image/dicom-go-server)
 2. [docker-go-server-with-frontend](./docker_image/dicom-go-server-with-frontend/)
 
 - Each image can be built and run locally using docker
