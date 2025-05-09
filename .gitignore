@@ -1,0 +1,2 @@
+# I personally deployed to fly.io - confident these docker images can be deployed almost anywhere
+fly.toml
