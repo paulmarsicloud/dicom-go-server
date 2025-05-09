@@ -9,8 +9,8 @@ This is a POC Dicom processor written in Go. It has three endpoints:
 The concept is to take a DICOM file on your machine and upload it to the `/upload` endpoint. The application returns a unique file name which you can then query the DICOM tags for (`/header`) or view the DICOM image as a png (`/image`). Commands can be run via curl, Postman or Browser
 
 ## Diagram
-![Diagram](https://github.com/user-attachments/assets/3d942ebe-3bca-40c5-8225-463efae50de5)
 
+![Diagram](https://github.com/user-attachments/assets/3d942ebe-3bca-40c5-8225-463efae50de5)
 
 ## Requirements for local usage/setup
 
@@ -30,6 +30,15 @@ The concept is to take a DICOM file on your machine and upload it to the `/uploa
 - In the real world, the frontend service and backend api service would be de-coupled to avoid having to deploy both at the same time, but given this is a POC, I've gone a simplified route
 - Building a docker image and pushing to `fly.io` made the most sense for the POC work. In the real world, we could run this completely serverless on AWS, GCP or Azure
 - Please see the [Examples](#examples) section for how to use the service
+
+## Ideal Additions
+
+- Validation of DICOM file on upload (ensuring only DICOM files are uploaded)
+- Captcha for rate limiting/security
+- Logging and alerting for failures
+- Additional VMs for scale and to avoid single points of failure
+- Authentication (basic or OAuth) for private files
+- Multiple file uploads, rather than one DICOM file at a time
 
 ## Examples
 
@@ -58,7 +67,6 @@ open https://dicom-go-server-api-only.fly.dev/image?file=1746810673989456460_IM0
 ### Example Usage in Browser
 
 https://github.com/user-attachments/assets/da43fdec-4e55-44b1-b115-794a212adabd
-
 
 ## Example DICOM files
 
