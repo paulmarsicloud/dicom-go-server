@@ -9,6 +9,8 @@ This is a POC Dicom processor written in Go. It has three endpoints:
 The concept is to take a DICOM file on your machine and upload it to the `/upload` endpoint. The application returns a unique file name which you can then query the DICOM tags for (`/header`) or view the DICOM image as a png (`/image`). Commands can be run via curl, Postman or Browser
 
 ## Diagram
+![Diagram](https://github.com/user-attachments/assets/3d942ebe-3bca-40c5-8225-463efae50de5)
+
 
 ## Requirements for local usage/setup
 
