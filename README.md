@@ -55,6 +55,9 @@ open https://dicom-go-server-api-only.fly.dev/image?file=1746810673989456460_IM0
 
 ### Example Usage in Browser
 
+https://github.com/user-attachments/assets/da43fdec-4e55-44b1-b115-794a212adabd
+
+
 ## Example DICOM files
 
 See [DICOM_Files](./DICOM_Files/)
